@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* root */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+#root>main{
+  flex: 1 auto;
+}
+
+/* ----Banner-Block---- */
+
+.banner-section {
+  position: relative;
+  padding: 86px 0px 100px 0px;
+}   
+
+.banner-section.bg-light {
+  background: linear-gradient(200deg,#000000 40%, #0c2742 80%);
+}
+.banner-section .banner-heading h1 {
+  color: #ffffff;
+  font-weight: 500;
+}
+.banner-section .banner-heading-content {
+  color: #ffffff;
+  margin-top: 25px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.banner-section::before{
+content: "";
+background-image: url(https://www.parallels.com/static/pl/fileadmin/res/img/ras/2022/overview/hero-image.png);
+background-size: auto 100%;
+background-position: right center;
+}
+.banner-section.bg-left:before {
+  content: '';
+  display: block;
+  height: 100%;
+  top: 0px;
+  width: 100%;
+  position: absolute;
+  right: calc(65% + -55px );
+  background-repeat: no-repeat;
+  background-position: right top;
+  /* background-size: auto; */
+}
+.download-request-btn .button .btn {
+margin-right: 20px;
+}
+
+
+
+/* --------------sign-up-css-start------------------- */
+
+section {
+  padding: 40px 0px;
+}
+.registration_form .felid input {
+  border: none;
+  padding: 6px 0px 6px 25px;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+}
+.registration_form .felid input::-webkit-outer-spin-button,
+.registration_form .felid input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.registration_form .felid {
+  /* float: left; */
+  position: relative;
+  padding: 10px 0px;
+}
+.registration_form .felid i {
+  position: absolute;
+  top: 20px;
+  left: 2px;
+}
+
+/* our_service */
+/* our-services */
+.our_service {
+  padding: 40px 0px;
+  background-color: #f0f7fd;
+}
+.our_service h2{
+  margin-bottom: 30px;
+} 
+.our_service .card {
+  height: 100%;   
+}
+img.card-img-top {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.our_service .row {
+  gap: 15px 0px;
+}
+
+/* -----forgo-password------- */
+section.forgot_password ,section.reset_password ,section.register-block ,section.addproduct_block{
+  padding: 70px 0px;
+  /* width: 100%; */
+  /* max-width: 920px; */
+  /* margin: 0 auto; */
+  background: aliceblue;
+}
+.forgot_password form ,.reset_password form ,.register-block form,.addproduct_block form {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+/* ------CONTRACT-------- */
+/* contract */
+.location-block {
+  padding: 50px 0px;
+  background-color: #f0f7fd;
+}
+.location-block .location-map h2 {
+  padding-bottom: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+}
+.location-block .location-map h2::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  top: 18px;
+  left: 0px;
+  max-width: 28%;
+  background: #888;
+  position: absolute;
+}
+.location-block .location-map h2::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  top: 18px;
+  right: 0px;
+  max-width: 28%;
+  background: #888;
+  position: absolute;
+}
+
+.submit-form input[type="text"] {
+  width: 48%;
+  margin: 10px;
+  padding: 14px 16px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+
+
+/* ---------Footer-CSS-------------- */
+/* --footer--- */
+footer {
+  font-size: .85em;
+}
+
+.ft-copyright-list {
+  line-height: 1.4;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: #999;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px)
+{
+  footer .ft-copyright-list>li {
+    position: relative;
+
+  }
+  footer .ft-copyright-list>li+li:not(:nth-child(1)):before {
+    position: absolute;
+    top: 56%;
+    left: -9px;
+    margin-top: -12px;
+    color: #999;
+    content: '|';
+  }
+}
+
+.ft-copyright-list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.ft-copyright-list li a {
+  text-decoration: none;
+  color: #999;
+  padding-right: 0.5rem;
+}
+
+.ft-copyright-list a:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.ft-social-list {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.ft-social-list li {
+  display: inline-block;
+  margin-right: 0;
+  position: relative
+}
+/* .ft-social-list li::after {
+  content: '';
+  position: absolute;
+  top: 0.75rem;
+  right: -0.65rem;
+  width: 1.1rem;
+  border-top: 1px solid #fff;
+} */
+.ft-social-list li::after {
+  content: '';
+  position: absolute;
+  top: 0.75rem;
+  right: -8px;
+  width: 15px;
+  border-top: 1px solid #fff;
+}
+.ft-social-list a {
+  width: 52px;
+  height: 26px;
+  color: #333;
+  position: relative;
+  display: block;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  padding: 3px 0.2rem;
+  margin: 0 .4rem;
+  text-align: center;
+}
+
+.ft-social-list a:hover {
+  background-color: #fff;
+}
+
+.ft-social-list a img {
+  width: 18px;
+  vertical-align: baseline;
+}
+
+.ft-social-list a:hover img {
+  filter: invert(1);
+}
+
+.ft-copyright-list li:first-child {
+  margin-right: 1rem;
+}
+
+.ft-copyright-list li:last-child {
+  margin-right: 0;
+} 
+
+.ft-social-list li:last-child::after {
+  border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .ft-logos.float-end {
+      float: left !important;
+  }
+}
